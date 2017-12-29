@@ -10,7 +10,7 @@ This microservice is divided into two parts :
 
 2. **geographical-microservice** - 
 	
-    1. This module reads the results from the database.
+    1. This module reads the results from the database and makes a REST call to the excel batch job to register a job.
 	2. It runs on port of 9090.
 	3. The main class to start the module is GeographicalApplication.java
 
