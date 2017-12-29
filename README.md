@@ -25,9 +25,9 @@ The database used is PostGreSql 10. Please ensure you have it installed on the s
 The base file path property is present in the application.properties of the excel-batch module in the resources folder of the test and main.
 You can change the file path property accordingly.
 
-Integration Tests :
+**Integration Tests** :
 
-For running the Integration Tests please ensure that the sample geodata.xls file is in the file path. You can find the sample file in the test/resources folder of the excel-batch module.
+For running the Integration Tests please ensure that the sample geodata.xls file is in the base file path. You can find the sample file in the test/resources folder of the excel-batch module.
 
 **Endpoints Test** :
 
