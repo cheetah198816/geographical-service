@@ -23,7 +23,7 @@ public class RestExceptionHandler {
     }
 
     @ExceptionHandler(RuntimeException.class)
-    protected ResponseEntity<Object> handleEntityNotFound(
+    protected ResponseEntity<Object> handleAllOtherExceptions(
             RuntimeException ex) {
         return buildResponseEntity(new ApiError(HttpStatus.BAD_GATEWAY, ex.getMessage(), ex));
     }

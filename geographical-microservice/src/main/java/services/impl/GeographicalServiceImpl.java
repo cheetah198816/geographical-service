@@ -48,7 +48,7 @@ public class GeographicalServiceImpl implements GeographicalService {
     }
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
     public GetResultsResponse getResults(Long jobId) {
         final GetResultsResponse getResultsResponse = new GetResultsResponse();
         final String status = restBatchJobClient.getJobStatus(jobId);
@@ -70,6 +70,7 @@ public class GeographicalServiceImpl implements GeographicalService {
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
     public SearchResultsResponse searchResults(String code, String name, Long jobId) {
         final SearchResultsResponse searchResultsResponse = new SearchResultsResponse();
         final List<SectionEntity> sectionEntities = geographicalProcess.findByNameAndCode(name, code, jobId);

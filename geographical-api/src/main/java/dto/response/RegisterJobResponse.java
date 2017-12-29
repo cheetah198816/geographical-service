@@ -1,5 +1,6 @@
 package dto.response;
 
+import com.fasterxml.jackson.annotation.JsonClassDescription;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import lombok.Data;
@@ -11,6 +12,7 @@ import javax.validation.constraints.NotNull;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
+@JsonClassDescription("Dto containing the job id of the registered job.")
 public class RegisterJobResponse {
 
     @JsonPropertyDescription("Job Id")

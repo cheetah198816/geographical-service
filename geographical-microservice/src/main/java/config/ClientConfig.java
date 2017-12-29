@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ClientConfig {
 
-    @Value("${client.excelbath.baseUrl}")
+    @Value("${client.excelpath.baseUrl}")
     private String baseUrl;
 
     @Bean
