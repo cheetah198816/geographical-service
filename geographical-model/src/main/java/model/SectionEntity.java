@@ -23,7 +23,7 @@ public class SectionEntity implements Serializable {
     @Column(name = "section_name")
     private String sectionName;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private JobEntity job;
 

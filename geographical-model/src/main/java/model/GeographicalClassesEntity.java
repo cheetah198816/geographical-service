@@ -26,7 +26,7 @@ public class GeographicalClassesEntity implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @Cascade(CascadeType.ALL)
     private SectionEntity section;
 }

@@ -33,6 +33,7 @@ public class BatchIntegrationTest {
         session.beginTransaction();
         JobEntity jobEntity = new JobEntity();
         session.load(jobEntity, jobId);
+
         assertThat(jobEntity.getFileName()).isNotEmpty();
         assertThat(jobEntity.getSectionEntityList().size()).isEqualTo(3);
         session.getTransaction().commit();
@@ -47,6 +48,7 @@ public class BatchIntegrationTest {
         session.beginTransaction();
         JobEntity jobEntity = new JobEntity();
         session.load(jobEntity, jobId);
+
         assertThat(jobEntity.getFileName()).isNotEmpty();
         assertThat(jobEntity.getSectionEntityList().size()).isEqualTo(3);
         session.getTransaction().commit();
