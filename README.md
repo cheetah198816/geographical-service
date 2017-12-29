@@ -14,6 +14,12 @@ This microservice is divided into two parts :
 	2. It runs on port of 9090.
 	3. The main class to start the module is GeographicalApplication.java
 
+The other two modules :
+
+**geographical-api** : contains the dtos.
+
+**geographical-model** : contains the entities.
+
 Notice : Please start the excel-batch module first and then geographical-microservice.
 
 **Database** :
