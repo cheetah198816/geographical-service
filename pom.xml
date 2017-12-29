@@ -14,10 +14,10 @@
         <version>1.5.9.RELEASE</version>
     </parent>
     <modules>
-        <module>geographical-microservice</module>
         <module>geographical-api</module>
         <module>geographical-model</module>
         <module>excel-batch-job</module>
+        <module>geographical-microservice</module>
     </modules>
     <dependencies>
         <dependency>

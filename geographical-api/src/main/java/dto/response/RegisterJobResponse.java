@@ -16,6 +16,5 @@ import javax.validation.constraints.NotNull;
 public class RegisterJobResponse {
 
     @JsonPropertyDescription("Job Id")
-    @NotNull
     private Long jobId;
 }
