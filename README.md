@@ -4,15 +4,13 @@ This microservice is divided into two parts :
 
 1. **excel-batch-job** - 
 	
-    
     1. This module processes and parses the excel file and writes to the database.
     2. It runs on port 9091.
     3. The main class to start the module is ExcelBatchJobApplication.java
 
 2. **geographical-microservice** - 
 	
-    
-    1.This module reads the results from the database.
+    1. This module reads the results from the database.
 	2. It runs on port of 9090.
 	3. The main class to start the module is GeographicalApplication.java
 
