@@ -1,10 +1,12 @@
 import client.RestExcelBatchJobClient;
+import com.thoughtworks.xstream.mapper.Mapper;
 import dto.request.RegisterJobRequest;
 import dto.response.GetResultsResponse;
 import dto.response.RegisterJobResponse;
 import dto.response.SearchResultsResponse;
 import model.JobEntity;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,11 +37,11 @@ public class GeographicalIntegrationTest {
     private GeographicalService geographicalService;
 
     @Autowired
-    private JobRepository jobRepository;
+    private  JobRepository jobRepository;
 
     @Before
     @Transactional(propagation = Propagation.REQUIRES_NEW)
-    public void init() {
+    public  void init() {
         JobEntity jobEntity = TestHelper.getJobEntityWithParsedResults();
         jobRepository.save(jobEntity);
     }
